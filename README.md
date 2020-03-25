@@ -38,7 +38,8 @@ cd fullstack-graphql-airbnb-clone
 yarn
 ```
 
-4. Start PostgreSQL server
+4. Start PostgreSQL server. Use PostGreSQL version 10.12 (since v11.7 or v12.2 results in an error resolved in a newer typeorm dependency)
+
 5. Create database called `graphql-ts-server-boilerplate`
 
 ```
@@ -57,11 +58,13 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 9. In `packages/server` create a file called `.env` and add the following line inside: `FRONTEND_HOST=http://localhost:3000`
 
-10. Run `yarn build` in `packages/common`
+10. In `packages/server`, create a new folder called `images`
 
-11. Run `yarn build` in `packages/controller`
+11. Run `yarn build` in `packages/common`
 
-12. Get Google Maps API key and put it here https://github.com/benawad/fullstack-graphql-airbnb-clone/blob/master/packages/web/public/index.html#L14 Videos doing that: https://youtu.be/-QQnzDVcTCo and https://youtu.be/xLlIgokKiLc
+12. Run `yarn build` in `packages/controller`
+
+13. Get Google Maps API key and put it here https://github.com/benawad/fullstack-graphql-airbnb-clone/blob/master/packages/web/public/index.html#L14 Videos doing that: https://youtu.be/-QQnzDVcTCo and https://youtu.be/xLlIgokKiLc
 
 
 
